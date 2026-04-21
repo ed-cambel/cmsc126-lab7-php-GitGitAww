@@ -1,0 +1,120 @@
+body,
+input,
+select,
+textarea,
+button {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f2f2f2;
+}
+
+::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 1;
+}
+
+form {
+    width: 100%;
+}
+
+.container {
+    width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.header {
+    background: #8B0000;
+    color: white;
+    padding: 15px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.header small {
+    font-size: 12px;
+}
+
+.section {
+    padding: 20px;
+}
+
+.section-title {
+    color: #8B0000;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.required {
+    color: #8B0000;
+}
+
+input,
+select,
+textarea {
+    padding: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.row label {
+    flex: 0 0 150px;
+    font-size: 12px;
+    margin: 0;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.file-box {
+    border: 1px dashed #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #555;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #8B0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #a30000;
+}
+
+.record-section {
+    padding: 20px;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.search {
+    background: #87CEFA;
+}
+
+.update {
+    background: #90EE90;
+}
+
+.delete {
+    background: #FF7F7F;
+}
