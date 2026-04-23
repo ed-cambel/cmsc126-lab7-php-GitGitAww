@@ -19,46 +19,55 @@
         <div class="section">
             <div class="section-title">PERSONAL INFORMATION</div>
 
-            <div class="row"></div>
-            <div>
-                <label>Name <span class="required">*</span></label>
-                <input type="text" maxlength="40" required placeholder="e.g Juan dela Cruz">
+            <div class="row">
+                <div class="field">
+                    <label>Name <span class="required">*</span></label>
+                    <input type="text" maxlength="40" required placeholder="e.g Juan dela Cruz">
+                </div>
+            
+                <div class="field">
+                    <label>Age <span class="required">*</span></label>
+                    <input type="number" min="0" max="99" required placeholder="0 - 99">
+                </div>
             </div>
+        </div>
 
-            <div>
-                <label>Age <span class="required">*</span></label>
-                <input type="number" min="0" max="99" required placeholder="0 - 99">
-            </div><br>
-
+        <div class="field full-width">
             <label>Email <span class="required">*</span></label>
             <input type="email" maxlength="40" pattern="^[a-zA-Z0-9._%+-]+@up\.edu\.ph$" required
-                placeholder="e.g. juan@up.edu.ph"><br>
+                placeholder="e.g. juan@up.edu.ph">
             <small>Must be a valid email address (max 40 chars).</small>
         </div>
 
         <!-- ACADEMIC INFO -->
         <div class="section">
-            <div class="section-title"></div>
+            <div class="section-title"> ACADEMIC INFORMATION</div>
 
-            <div>
-                <label>Course <span class="required">*</span></label>
-                <input type="text" maxlength="40" required placeholder="e.g BS Computer Science">
-            </div>
-
-            <div>
-                <label>Year Level <span class="required">*</span></label>
-                <select required>
-                    <option value="">Select Year</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>Nth</option>
-                </select>
+            <div class="row">
+                <div class="field">
+                    <label>Course <span class="required">*</span></label>
+                    <input type="text" maxlength="40" required placeholder="e.g BS Computer Science">
+                </div>
+            
+                <div class="field">
+                    <label>Year Level <span class="required">*</span></label>
+                    <select required>
+                        <option value="">Select Year</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>Nth</option>
+                    </select>
+                </div>
             </div>
 
             <label>Graduating this year? <span class="required">*</span></label>
-            <input type="checkbox"> Yes
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox"> Yes
+                </label>
+            </div>
         </div>
 
         <!-- PROFILE PHOTO -->
@@ -81,17 +90,24 @@
         <div class="record-section">
             <div class="section-title">RECORD MANAGEMENT</div>
 
-            <label>LOOK UP BY STUDENT ID</label>
-            <input type="text" placeholder="Enter Student ID (e.g. 2024-00123)">
+            <div class="search-box">
+                <label>LOOK UP BY STUDENT ID</label>
+                <input type="text" placeholder="Enter Student ID (e.g. 2024-00123)">
+            </div>
 
-            <button class="btn search">Search</button>
-            <button class="btn update">Update</button>
-            <button class="btn delete">Delete</button>
+            <div class="btn-group">
+                <button class="btn search">Search</button>
+                <button class="btn update">Update</button>
+                <button class="btn delete">Delete</button>
+            </div>
         </div>
     </form>
 </div>
 
 <body>
+    <!-- <?php
+        include 'DBConnector.php';
+    ?>  -->
 
 </body>
 

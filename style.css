@@ -17,8 +17,8 @@ form {
 }
 
 .container {
-    width: 600px;
-    margin: 20px auto;
+    width: 650px;
+    margin: 30px auto;
     background: #fff;
     border: 1px solid #ccc;
 }
@@ -26,69 +26,114 @@ form {
 .header {
     background: #8B0000;
     color: white;
-    padding: 15px;
+    padding: 20px;
 }
 
 .header h2 {
     margin: 0;
+    text-align: center;
+    text-shadow: #555 1px 2px 2px;
 }
 
 .header small {
     font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
 }
 
 .section {
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .section-title {
     color: #8B0000;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* labels */
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 
 .required {
     color: #8B0000;
 }
 
+/* checkbox */
+.checkbox-group {
+    margin-top: 5px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.checkbox-label input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+/* inputs */
 input,
 select,
 textarea {
     padding: 6px;
     border: 1px solid #ccc;
+    width: 100%;
     box-sizing: border-box;
 }
 
+/* rows layout */
 .row {
     display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 10px;
+    gap: 20px;
+    margin-bottom: 15px;
 }
 
-.row label {
-    flex: 0 0 150px;
-    font-size: 12px;
-    margin: 0;
-    text-align: right;
-    padding-right: 10px;
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
+.full-width {
+    width: 91%;
+    margin-bottom: 15px;
+    margin-inline-start: 30px;
+}
+
+.field small {
+    font-size: 10px;
+    color: #555;
+    margin-top: 3px;
+}
+
+/* file upload */
 .file-box {
     border: 1px dashed #ccc;
     text-align: center;
     padding: 20px;
     font-size: 12px;
+    margin-top: 10px;
     color: #555;
 }
 
+/* Buttons*/ 
 .submit-btn {
     width: 100%;
     padding: 10px;
     background: #8B0000;
     color: white;
     border: none;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -97,14 +142,41 @@ textarea {
 }
 
 .record-section {
-    padding: 20px;
+    padding: 20px 30px;
+}
+
+.record-section input {
+    margin-top: 5px;
+}
+
+.search-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.search-box label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.search-box input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-group{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
 }
 
 .btn {
-    padding: 5px 10px;
-    margin-left: 5px;
+    padding: 8px 14px;
     border: none;
     cursor: pointer;
+    font-size: 13px;
 }
 
 .search {
