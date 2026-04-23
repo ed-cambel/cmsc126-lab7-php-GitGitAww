@@ -8,7 +8,7 @@ $password = "";
 $conn = new mysqli($servername, $username, $password);
 
 // create database
-$sql = "CREATE DATABASE IF NOT EXISTS gitgitawDB";
+$sql = "CREATE DATABASE IF NOT EXISTS gitgitawdb";
 
 if ($conn->query($sql) === TRUE) {
     echo "Database ready";
