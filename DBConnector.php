@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "gitgitawDB";
+$dbname = "gitgitawdb";
 
 // create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
