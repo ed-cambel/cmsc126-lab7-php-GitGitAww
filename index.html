@@ -16,7 +16,7 @@
             <small>All fields marked * are required. </small>
         </div>
 
-        <form action="Database.php" method="POST" enctype="multipart/form-data">
+        <form id="registrationForm" enctype="multipart/form-data">
 
             <!-- PERSONAL INFO -->
             <div class="section">
@@ -86,26 +86,28 @@
             </div>
 
             <div class="section">
-                <button class="submit-btn">+ Submit Registration</button>
+                <button type="button" class="submit-btn" onclick="submitRegistration()">Submit Registration</button>
             </div>
 
-            <!-- RECORD MANAGEMENT -->
+           
+        </form>
+         <!-- RECORD MANAGEMENT -->
             <div class="record-section">
                 <div class="section-title">RECORD MANAGEMENT</div>
 
                 <div class="search-box">
                     <label>LOOK UP BY STUDENT ID</label>
-                    <input type="text" placeholder="Enter Student ID (e.g. 2024-00123)">
+                    <input type="text" id="IDInput" placeholder="Enter Student ID">
                 </div>
 
                 <div class="btn-group">
-                    <button class="btn search">Search</button>
-                    <button class="btn update">Update</button>
-                    <button class="btn delete">Delete</button>
+                    <button class="btn" id="searchBtn">Search</button>
+                    <button class="btn update" id="updateBtn">Update</button>
+                    <button class="btn delete" onclick="confirmDelete()">Delete</button>
                 </div>
+                <br>
+                <div id="resultDisplay"></div>
             </div>
-        </form>
     </div>
-
 </body>
 </html>
