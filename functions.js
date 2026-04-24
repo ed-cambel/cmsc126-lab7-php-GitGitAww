@@ -1,6 +1,6 @@
 // Submit Registration Button Listener
 function submitRegistration() {
-    const form = document.getElementById('registrationForm');s
+    const form = document.getElementById('registrationForm');
     if (!form.reportValidity()) {
         return; 
     }
